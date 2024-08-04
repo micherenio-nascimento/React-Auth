@@ -1,15 +1,18 @@
 import { useState } from 'react';
-import { signInWithEmailAndPassword, auth } from '../firebase/firebase';
+import { toast } from 'react-toastify';
+import { signInWithEmailAndPassword as signInWithEmailAndPasswordFirebase, auth } from '../firebase/firebase';
 
 const useAuth = () => {
   const [error, setError] = useState('');
 
   const signIn = async (email, password) => {
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      // Redirecionar ou lidar com o sucesso
+      await signInWithEmailAndPasswordFirebase(auth, email, password);
+      toast.success('Autenticação bem-sucedida!');
+
     } catch (err) {
       setError(err.message);
+      toast.error('Falha na autenticação: ' + err.message); 
     }
   };
 

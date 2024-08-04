@@ -14,9 +14,9 @@
 body {
   margin: 0;
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center;     /* Centraliza verticalmente */
-  min-height: 100vh;       /* Garante que o body ocupe a altura total da viewport */
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;       
   background-color: #242424;
   color: rgba(255, 255, 255, 0.87);
 }
