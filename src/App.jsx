@@ -1,12 +1,8 @@
-import './App.css'
+import React from 'react';
+import LoginPage from './pages/LoginPage';
 
-function App() {
+const App = () => {
+  return <LoginPage />;
+};
 
-  return (
-    <>
-      
-    </>
-  )
-}
-
-export default App
+export default App;
