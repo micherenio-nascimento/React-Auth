@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getAuth, signInWithEmailAndPassword as signInWithEmailAndPasswordFirebase } from 'firebase/auth';
 
 const firebaseConfig = {
     apiKey: "AIzaSyAYPw0tdu_hDiErGfS9nRHkNVACg-uqqP8",
@@ -10,3 +11,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+// Exporta a função com o alias correto
+export { auth, signInWithEmailAndPasswordFirebase as signInWithEmailAndPassword };
