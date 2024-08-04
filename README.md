@@ -1,4 +1,4 @@
 # React + Firebase
 
-## Categoreia
-** frontend **
+## Categoria
+**frontend**
