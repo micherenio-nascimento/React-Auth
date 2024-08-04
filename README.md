@@ -85,7 +85,7 @@ Clone o repositório para o seu ambiente local:
 ```sh
 git clone https://github.com/micherenio-nascimento/React-Auth.git
 
-cd react-auth-app
+cd React-Auth
 
 npm install
 
